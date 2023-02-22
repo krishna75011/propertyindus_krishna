@@ -18,21 +18,21 @@ const SellerPointsWorks = ref([
     class: "mb-3 mb-md-4 customhight",
   },
   {
-    image: "/images/seller_points_work2.png",
+    image: "/images/seller_points_work2.webp",
     title: "We Will Send You An Offer In 72 Hours",
     content:
       "If your property matches our requirements. Within 72 hours, we’ll send you a cash offer on your home.",
     class: "mb-3 mb-md-4",
   },
   {
-    image: "/images/seller_points_work3.png",
+    image: "/images/seller_points_work3.webp",
     title: "Approvals And Verifications",
     content:
       "You can approve or negotiate our offer.  Once we agree with the offer terms, we will verify your documents with the registry in India. If everything is satisfactory, we will give you a deposit, and then the closing at the agreed time.",
     class: "mb-3 mb-md-0",
   },
   {
-    image: "/images/seller_points_work4.png",
+    image: "/images/seller_points_work4.webp",
     title: "Close the deal. Sell to us",
     content:
       "We will close the deal in 6-12 months, with an early occupancy to modernize your property. We will market to prospective buyers prior to closing. We will close in time irrespective of whether we find a buyer or not.",
@@ -508,7 +508,7 @@ const submitForm = async () => {
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-5 mb-lg-0">
                       <div class="whosell_image">
                         <img
-                          src="/images/whosell.png"
+                          src="/images/whosell.webp"
                           class="img-fluid"
                           alt=""
                         />

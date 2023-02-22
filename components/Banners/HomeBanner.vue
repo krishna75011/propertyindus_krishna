@@ -21,7 +21,7 @@
 <style scoped>
 .banner {
   position: relative;
-  background: url(/images/home_banner_back_new.png);
+  background: url(/images/home_banner_back_new.webp);
   background-repeat: no-repeat !important;
   background-position: center;
   background-size: cover;

@@ -51,7 +51,7 @@ function addAddressf() {
 <style scoped>
 .banner {
   position: relative;
-  background: url(/images/sellers_banner_back.png);
+  background: url(/images/sellers_banner_back.webp);
   background-repeat: no-repeat !important;
   background-position: center;
   background-size: cover;
