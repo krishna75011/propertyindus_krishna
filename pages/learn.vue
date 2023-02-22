@@ -464,58 +464,58 @@ const faqItems = ref([
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
-  .sellers_faq_title h4[data-v-9ea1a676] {
+  .sellers_faq_title h4 {
     font-size: 33px;
   }
 }
 @media (max-width: 991.98px) {
-  .coin_content h1[data-v-9ea1a676],
-  .seller_points_title h2[data-v-9ea1a676],
+  .coin_content h1,
+  .seller_points_title h2,
   .sellers_faq_title h4 {
     font-size: 30px !important;
   }
-  .coin_content h2[data-v-9ea1a676] {
+  .coin_content h2 {
     font-size: 22px;
     margin-bottom: 15px;
   }
-  .cowin[data-v-9ea1a676] {
+  .cowin {
     padding: 30px 0;
   }
-  .ownership_plan_content h2[data-v-9ea1a676] {
+  .ownership_plan_content h2 {
     font-size: 25px;
   }
-  .ownership_plan_content p[data-v-9ea1a676] {
+  .ownership_plan_content p {
     font-size: 16px;
   }
-  .ownership_plan_points_content p[data-v-9ea1a676] {
+  .ownership_plan_points_content p {
     font-size: 16px;
   }
-  .ownership_plan_points_content span[data-v-9ea1a676] {
+  .ownership_plan_points_content span {
     font-size: 24px;
   }
-  .buy_form[data-v-9ea1a676] {
+  .buy_form {
     padding: 20px 0;
   }
-  .buy_form_title h3[data-v-9ea1a676] {
+  .buy_form_title h3 {
     font-size: 23px;
   }
 }
 @media (max-width: 767.98px) {
-  .coin_content h1[data-v-9ea1a676][data-v-9ea1a676],
-  .seller_points_title h2[data-v-9ea1a676][data-v-9ea1a676],
-  .sellers_faq_title h4[data-v-9ea1a676] {
+  .coin_content h1,
+  .seller_points_title h2,
+  .sellers_faq_title h4 {
     font-size: 21px !important;
   }
-  .coin_content h2[data-v-9ea1a676][data-v-9ea1a676] {
+  .coin_content h2 {
     font-size: 19px;
   }
-  .seller_points_work_box_title span[data-v-9ea1a676] {
+  .seller_points_work_box_title span {
     font-size: 22px;
   }
-  .seller_points_work_box_content p[data-v-9ea1a676] {
+  .seller_points_work_box_content p {
     font-size: 15px;
   }
-  .seller_points_title[data-v-9ea1a676] {
+  .seller_points_title {
     margin-bottom: 30px;
   }
   .ownership_plan_content {
@@ -527,19 +527,19 @@ const faqItems = ref([
   .ownership_plan_points_content {
     text-align: center;
   }
-  .ownership_plan_points_content span[data-v-9ea1a676][data-v-9ea1a676] {
+  .ownership_plan_points_content span {
     font-size: 20px;
   }
-  .ownership_plan_points_content p[data-v-9ea1a676][data-v-9ea1a676] {
+  .ownership_plan_points_content p {
     font-size: 15px;
   }
-  .ownership_plan_points[data-v-9ea1a676] {
+  .ownership_plan_points {
     padding: 35px 0;
   }
-  .ownership_plan_content h2[data-v-9ea1a676][data-v-9ea1a676] {
+  .ownership_plan_content h2 {
     font-size: 21px;
   }
-  .ownership_plan_content p[data-v-9ea1a676][data-v-9ea1a676] {
+  .ownership_plan_content p {
     font-size: 15px;
   }
 }

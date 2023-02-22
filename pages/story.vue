@@ -211,15 +211,15 @@ const crewstoriesItems = ref([
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
-  .behind_scenes[data-v-ed9bcff3] {
+  .behind_scenes {
     padding: 40px 0 0;
   }
-  .our_crew_content p[data-v-ed9bcff3] {
+  .our_crew_content p {
     font-size: 17px;
   }
 }
 @media (max-width: 767.98px) {
-  .our_crew[data-v-ed9bcff3] {
+  .our_crew {
     padding: 30px 0;
   }
   .our_crew_content h2,
@@ -227,9 +227,8 @@ const crewstoriesItems = ref([
     font-size: 30px;
     margin-bottom: 9px;
   }
-  .our_crew_content p[data-v-ed9bcff3] {
+  .our_crew_content p {
     font-size: 16spx;
   }
 }
-
 </style>

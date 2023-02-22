@@ -143,17 +143,17 @@ function onSubmit() {
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
-  .radio_box span[data-v-cf581b8f] {
+  .radio_box span {
     font-size: 15px;
     margin-bottom: 20px;
   }
   .radio_box label.form-check-label {
     font-size: 15px;
   }
-  .button_box[data-v-cf581b8f] {
+  .button_box {
     margin-top: 22px;
   }
-  .form_submit[data-v-cf581b8f] {
+  .form_submit {
     padding: 6px 32px;
     font-size: 16px;
   }

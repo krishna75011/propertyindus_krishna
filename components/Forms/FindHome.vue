@@ -264,7 +264,7 @@ ul.address_list p span {
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
-  .form_box .input_field input.form-control[data-v-0f40efcb] {
+  .form_box .input_field input.form-control {
     width: 286px;
   }
 }
@@ -274,19 +274,17 @@ ul.address_list p span {
   }
 }
 @media (max-width: 767.98px) {
-  .form_box .input_field input.form-control[data-v-0f40efcb][data-v-0f40efcb] {
+  .form_box .input_field input.form-control {
     width: 242px;
     padding: 9px 0px 9px 31px;
   }
-  .button_box button.form_submit[data-v-0f40efcb] {
+  .button_box button.form_submit {
     font-size: 14px;
     padding: 7.5px 20px;
   }
 }
 @media (max-width: 321.98px) {
-  .form_box
-    .input_field
-    input.form-control[data-v-0f40efcb][data-v-0f40efcb][data-v-0f40efcb] {
+  .form_box .input_field input.form-control {
     width: 209px;
   }
   .form_box .input_field input.form-control::placeholder {
