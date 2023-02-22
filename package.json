@@ -1,0 +1,27 @@
+{
+  "name": "property-indus",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0",
+    "@volar-plugins/vetur": "latest"
+  },
+  "dependencies": {
+    "@vuepic/vue-datepicker": "^3.6.5",
+    "axios": "^1.2.3",
+    "v-use-places-autocomplete": "^1.0.1",
+    "vee-validate": "^4.7.0",
+    "vue-lite-youtube-embed": "^1.2.0",
+    "vue-select": "^4.0.0-beta.3",
+    "vue-sweetalert2": "^5.0.5",
+    "vue3-google-map": "^0.15.0",
+    "vueperslides": "^3.3.2",
+    "yup": "^0.32.11"
+  }
+}

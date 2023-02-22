@@ -1,0 +1,42 @@
+/**************responsive***********/
+@media screen and (max-width: 2560px) {
+}
+
+@media screen and (max-width: 1500.98px) {
+}
+
+@media screen and (max-width: 1199.98px) {
+  span#open_burg {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .vueperslides__arrow {
+    transform: translateY(-100%) !important;
+  }
+  .proprty_details_top .vueperslides__arrow {
+    transform: translateY(-50%) !important;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 575.98px) {
+}
+
+@media screen and (max-width: 423.98px) {
+}
+
+@media screen and (max-width: 375.98px) {
+}
+
+@media screen and (max-width: 321.98px) {
+}
+
+@media screen and (max-width: 285.98px) {
+}
+
+@media screen and (max-width: 736.98px) {
+}
