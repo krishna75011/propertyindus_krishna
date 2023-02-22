@@ -176,24 +176,40 @@ header {
 .login_button {
   margin-left: 30px;
 }
-@media screen and (max-width: 1199.98px) {
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+  .login_button {
+    margin-left: 25px;
+  }
+  .login_button a {
+    padding: 6px !important;
+    font-size: 15px;
+  }
+  .main_menu ul.navbar-nav li a {
+    font-size: 15px;
+  }
   .main_menu ul.navbar-nav li:not(:last-child) {
-    margin-right: 33px;
+    margin-right: 20px;
   }
 }
-@media screen and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .navbar-nav {
     display: none;
   }
-  .side_menu nav ul li a {
-    padding: 11px 0;
-    font-size: 15px;
+  .login_button {
+    margin-left: 250px;
   }
 }
-
-@media screen and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .login_button {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
   .main_menu a.navbar-brand img {
-    width: 226px;
+    width: 200px;
   }
 }
 </style>

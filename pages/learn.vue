@@ -138,7 +138,7 @@ const faqItems = ref([
               <div class="col-md-12">
                 <div class="row">
                   <div
-                    class="col-md-3"
+                    class="col-lg-3 col-md-6 mb-4 mb-md-5 mb-lg-0"
                     v-for="(SellerPointsWork, index) in SellerPointsWorks"
                     :key="index"
                     :class="SellerPointsWork.class"
@@ -169,7 +169,7 @@ const faqItems = ref([
         <div class="ownership_plan">
           <div class="container">
             <div class="row justify-content-center align-items-center">
-              <div class="col-md-4">
+              <div class="col-md-4 mb-4 mb-md-0">
                 <div class="ownership_plan_image">
                   <img
                     src="/images/owner_ship_side.png"
@@ -198,14 +198,14 @@ const faqItems = ref([
         <div class="ownership_plan_points">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-md-10">
+              <div class="col-lg-10 col-md-12">
                 <div
                   class="row align-items-center"
                   v-for="(ownerplan, index) in ownerplans"
                   :key="index"
                   :class="ownerplan.class"
                 >
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-4 mb-md-0">
                     <div class="ownership_plan_points_image">
                       <img :src="ownerplan.image" class="img-fluid" alt="" />
                     </div>
@@ -225,7 +225,7 @@ const faqItems = ref([
         </div>
         <div class="buy_form">
           <div class="container">
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-lg-center">
               <div class="col-md-6 mb-4 mb-md-0">
                 <div class="buy_form_image">
                   <img
@@ -258,12 +258,12 @@ const faqItems = ref([
         <div class="sellers_faq">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-md-8">
+              <div class="col-lg-8 col-md-10">
                 <div class="sellers_faq_title">
                   <h4>Frequently Asked Questions</h4>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-lg-8 col-md-10">
                 <div class="sellers_faq_box">
                   <AccrodionFaq :faqItems="faqItems" />
                 </div>
@@ -304,7 +304,9 @@ const faqItems = ref([
 .coin_content p {
   font-size: 16px;
 }
-
+.lear_banner_image img {
+  width: 100%;
+}
 .seller_points {
   padding: 50px 0;
 }
@@ -408,7 +410,10 @@ const faqItems = ref([
 .buy_form {
   padding: 50px 0;
 }
-
+.buy_form_image {
+  position: sticky;
+  top: 100px;
+}
 .buy_form_title {
   text-align: center;
   margin-bottom: 20px;
@@ -456,107 +461,88 @@ const faqItems = ref([
   border-bottom: 1px solid #00000038;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1399.98px) {
 }
-@media screen and (max-width: 991.98px) {
-  .coin_content h1 {
-    font-size: 32px;
+@media (max-width: 1199.98px) {
+  .sellers_faq_title h4[data-v-9ea1a676] {
+    font-size: 33px;
   }
-  .coin_content h2 {
-    font-size: 27px;
-  }
-  .coin_content p {
-    font-size: 14px;
-  }
-  .seller_points {
-    padding: 35px 0;
-  }
-  .seller_points_title span {
-    font-size: 14px;
-  }
-  .seller_points_title h2 {
-    font-size: 25px;
-    margin: 12px 0 11px;
-  }
-  .seller_points_title p {
-    font-size: 13px;
-    width: 74%;
-  }
-  .seller_points_work_box {
-    padding: 30px;
-  }
-  .seller_points_work_box_image img {
-    height: 60px;
-  }
-  .seller_points_work_box_content p {
-    font-size: 14px;
-  }
+}
+@media (max-width: 991.98px) {
+  .coin_content h1[data-v-9ea1a676],
+  .seller_points_title h2[data-v-9ea1a676],
   .sellers_faq_title h4 {
-    font-size: 26px;
+    font-size: 30px !important;
   }
-  .sellers_faq_title {
+  .coin_content h2[data-v-9ea1a676] {
+    font-size: 22px;
     margin-bottom: 15px;
   }
-  .buy_form_title h3 {
+  .cowin[data-v-9ea1a676] {
+    padding: 30px 0;
+  }
+  .ownership_plan_content h2[data-v-9ea1a676] {
     font-size: 25px;
   }
-  .buy_form_title p {
-    font-size: 14px;
+  .ownership_plan_content p[data-v-9ea1a676] {
+    font-size: 16px;
+  }
+  .ownership_plan_points_content p[data-v-9ea1a676] {
+    font-size: 16px;
+  }
+  .ownership_plan_points_content span[data-v-9ea1a676] {
+    font-size: 24px;
+  }
+  .buy_form[data-v-9ea1a676] {
+    padding: 20px 0;
+  }
+  .buy_form_title h3[data-v-9ea1a676] {
+    font-size: 23px;
   }
 }
-@media screen and (max-width: 767.98px) {
-  .seller_points_title h2 {
+@media (max-width: 767.98px) {
+  .coin_content h1[data-v-9ea1a676][data-v-9ea1a676],
+  .seller_points_title h2[data-v-9ea1a676][data-v-9ea1a676],
+  .sellers_faq_title h4[data-v-9ea1a676] {
+    font-size: 21px !important;
+  }
+  .coin_content h2[data-v-9ea1a676][data-v-9ea1a676] {
+    font-size: 19px;
+  }
+  .seller_points_work_box_title span[data-v-9ea1a676] {
     font-size: 22px;
-    line-height: 1.3;
-    margin: 15px 17px 15px;
   }
-  .seller_points_title p {
-    font-size: 14px;
-    width: 90%;
+  .seller_points_work_box_content p[data-v-9ea1a676] {
+    font-size: 15px;
   }
-  .seller_points {
+  .seller_points_title[data-v-9ea1a676] {
+    margin-bottom: 30px;
+  }
+  .ownership_plan_content {
+    text-align: center;
+  }
+  .ownership_plan_points_image img {
+    width: 100%;
+  }
+  .ownership_plan_points_content {
+    text-align: center;
+  }
+  .ownership_plan_points_content span[data-v-9ea1a676][data-v-9ea1a676] {
+    font-size: 20px;
+  }
+  .ownership_plan_points_content p[data-v-9ea1a676][data-v-9ea1a676] {
+    font-size: 15px;
+  }
+  .ownership_plan_points[data-v-9ea1a676] {
     padding: 35px 0;
   }
-  .sellers_faq {
-    padding: 35px 0;
+  .ownership_plan_content h2[data-v-9ea1a676][data-v-9ea1a676] {
+    font-size: 21px;
   }
-  .sellers_faq_box {
-    padding: 0 10px;
-  }
-  .coin_content h1 {
-    font-size: 25px;
-  }
-  .coin_content h2 {
-    font-size: 23px;
-  }
-  .buy_form_title span {
-    font-size: 14px;
-  }
-  .buy_form_main {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 4px 1px #0000000a;
-    padding: 30px 25px;
+  .ownership_plan_content p[data-v-9ea1a676][data-v-9ea1a676] {
+    font-size: 15px;
   }
 }
-
-@media screen and (max-width: 321.98px) {
-  .coin_content p {
-    font-size: 13px;
-  }
-  .seller_points_title h2 {
-    font-size: 20px;
-    margin: 15px 0px 10px;
-  }
-  .seller_points_title p {
-    font-size: 13px;
-    width: 93%;
-  }
-  .buy_form_title h3 {
-    font-size: 23px;
-  }
-  .buy_form_main {
-    padding: 30px 17px;
-  }
+@media (max-width: 575.98px) {
 }
 </style>

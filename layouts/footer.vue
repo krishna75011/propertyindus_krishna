@@ -7,7 +7,7 @@ const configs = useRuntimeConfig();
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 mb-md-0 mb-4">
+          <div class="col-md-12 col-lg-3 mb-mb-4 mb-lg-0 mb-3 custom_center">
             <div class="footer_title">
               <span>Contact Us</span>
             </div>
@@ -52,7 +52,7 @@ const configs = useRuntimeConfig();
               </ul>
             </div>
           </div>
-          <div class="col-md-3 mb-md-0 mb-4">
+          <div class="col-md-3 col-lg-3 mb-mb-0 mb-lg-0 mb-3">
             <div class="footer_title">
               <span>Offerings</span>
             </div>
@@ -65,7 +65,7 @@ const configs = useRuntimeConfig();
               </ul>
             </div>
           </div>
-          <div class="col-md-3 mb-md-0 mb-4">
+          <div class="col-md-4 col-lg-3 mb-mb-0 mb-lg-0 mb-3">
             <div class="footer_title">
               <span>About</span>
             </div>
@@ -80,7 +80,7 @@ const configs = useRuntimeConfig();
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-5 col-lg-3">
             <div class="footer_title">
               <span>Support</span>
             </div>
@@ -167,9 +167,7 @@ footer {
 .footer_social ul li:not(:last-child) {
   margin-right: 14px;
 }
-.footer_contact img {
-  margin-right: 11px;
-}
+
 .footer_social {
   margin-top: 25px;
 }
@@ -191,38 +189,71 @@ footer {
 
 .footr_copyright p {
   font-size: 16px;
-  font-weight: 500;
 }
 
-@media screen and (max-width: 991.98px) {
-  .footer_contact img {
-    margin-right: 0;
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .custom_center {
+    text-align: center;
   }
-  .footer_contact a {
-    margin-left: 7px;
-    font-size: 15px;
+
+  .footer_title {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
   }
-  .footer_social ul li:not(:last-child) {
-    margin-right: 12px;
+
+  .custom_center .footer_contact ul li {
+    justify-content: center;
   }
-  .footer_contact ul li:not(:last-child) {
-    margin-bottom: 15px;
-  }
-  .footr_copyright p {
-    font-size: 15px;
+  .footer_social ul {
+    justify-content: center;
   }
   .footer_title span {
-    font-size: 21px;
+    font-size: 20px;
   }
-  footer {
-    padding: 30px 0 20px;
+  .footer_contact ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer_contact ul li a {
+    margin: 0 !important;
+  }
+  .footer_contact ul li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+  }
+  .custom_center .footer_contact ul {
+    flex-direction: column;
+  }
+  .custom_center .footer_contact ul li:not(:last-child) {
+    margin-bottom: 15px;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  }
+  .custom_center .footer_contact ul li a {
+    margin-left: 10px !important;
+  }
+  .footer_contact ul li {
+    margin-bottom: 15px !important;
   }
   .footr_copyright {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 14px;
   }
+}
+@media (max-width: 767.98px) {
   .footr_copyright p {
-    font-size: 14px;
+    font-size: 15px;
   }
+}
+@media (max-width: 575.98px) {
 }
 </style>

@@ -19,7 +19,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="col-md-4">
+  <div class="col-lg-4 col-md-6">
     <div class="behind_user_card">
       <div class="behind_user_card_image">
         <img :src="image" class="img-fluid" alt="" />
@@ -99,33 +99,14 @@ const props = defineProps({
   background: #523174;
   transition: all 0.3s ease-out;
 }
-@media screen and (max-width: 991.98px) {
-  .behind_user_card {
-    padding: 28px 0;
-  }
-  .behind_user_card_image {
-    height: 140px;
-    width: 140px;
-  }
-  .behind_user_card_content span {
-    font-size: 19px;
-  }
-  .behind_user_card_content {
-    margin: 17px 0;
-  }
-  .behind_user_card_content p {
-    font-size: 14px;
-  }
-  .button_one {
-    padding: 9px 16px;
-    font-size: 14px;
-  }
+@media (max-width: 1399.98px) {
 }
-
-@media screen and (max-width: 767.98px) {
-  .behind_user_card {
-    padding: 25px 0;
-    margin: 0 30px 20px;
-  }
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
 }
 </style>

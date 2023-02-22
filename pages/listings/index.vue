@@ -90,7 +90,7 @@ export default {
       isLoadingfilter: true,
       allProperties: [],
       propertiesToDisplay: [],
-      perPage: 3,
+      perPage: 6,
       pageToOpen: 1,
       currentPage: 1,
       bottonStatus: "",
@@ -726,97 +726,37 @@ button.pagination_button:hover {
   background: #523174;
   color: #fff;
 }
-@media screen and (max-width: 1500.98px) {
+@media (max-width: 1399.98px) {
 }
-@media screen and (max-width: 1199.98px) {
-  .listings_inner_title h1 {
-    font-size: 31px;
-    margin-bottom: 15px;
-  }
-  .city_list {
-    max-width: 78%;
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .mbottom:nth-last-child(n + 3) {
+    margin-bottom: 25px;
   }
 }
-
-@media screen and (max-width: 991.98px) {
-  .listings_inner_title span {
-    font-size: 17px;
-    margin-bottom: 3px;
-  }
-  .listings_inner_title h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  .listings_inner_title p {
-    font-size: 15px;
-  }
+@media (max-width: 767.98px) {
   .listings_inner {
     padding: 40px 0;
+  }
+  .listings_inner_title span {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .listings_inner_title h1 {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .listings_inner_title p {
+    font-size: 16px;
+  }
+  .mbottom:nth-last-child(n + 2) {
+    margin-bottom: 25px;
   }
   .listings_inner_title {
     margin-bottom: 30px;
   }
-  .city_list {
-    max-width: 71%;
-  }
 }
-
-@media screen and (max-width: 767.98px) {
-  .listings_inner_title span {
-    font-size: 14px;
-    margin-bottom: 3px;
-  }
-  .listings_inner_title h1 {
-    font-size: 22px;
-    margin-bottom: 7px;
-  }
-  .listings_inner_title p {
-    font-size: 13px;
-    width: 63%;
-  }
-  .listing_filters_title span {
-    font-size: 14px;
-  }
-
-  .listing_filters_title button {
-    font-size: 14px;
-    margin-left: 13px;
-  }
-  .city_list button.next img,
-  .city_list button.prev img {
-    width: 11px;
-  }
-
-  .mbottom:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
-  .mbottom {
-    padding: 0 30px;
-  }
-
-  span.sort_title {
-    font-size: 15px;
-  }
-  span.sort_type {
-    font-size: 15px;
-  }
-  .city_list {
-    max-width: 100%;
-  }
-  .listing_filters {
-    flex-direction: column;
-  }
-  .filter_option {
-    width: 55%;
-    margin-left: 0;
-    margin: auto;
-    margin-top: 21px;
-  }
-  .filter_option_box {
-    width: 221px;
-    margin: auto;
-    left: 0;
-  }
+@media (max-width: 575.98px) {
 }
 </style>

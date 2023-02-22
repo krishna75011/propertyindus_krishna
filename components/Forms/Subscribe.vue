@@ -138,24 +138,28 @@ function onSubmit() {
   text-align: center;
 }
 
-@media screen and (max-width: 991.98px) {
-  .form_submit {
-    margin-top: 16px;
-    padding: 9px 16px;
-    font-size: 14px;
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .radio_box span[data-v-cf581b8f] {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
-  .button_box {
-    margin-top: 8px;
-  }
-  .radio_box span {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-  .radio_box {
-    margin-top: 13px;
-  }
-  .radio_box label {
+  .radio_box label.form-check-label {
     font-size: 15px;
   }
+  .button_box[data-v-cf581b8f] {
+    margin-top: 22px;
+  }
+  .form_submit[data-v-cf581b8f] {
+    padding: 6px 32px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
 }
 </style>

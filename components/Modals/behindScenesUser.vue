@@ -37,12 +37,12 @@ const props = defineProps({
           ></button>
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-lg-5 col-md-12 mb-2 mb-md-3 mb-lg-0">
                 <div class="behind_user_image">
                   <img :src="image" class="img-fluid" alt="" />
                 </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-lg-7 col-md-12">
                 <div class="behind_user_content">
                   <span>{{ name }} </span>
                   <small>{{ degination }}</small>
@@ -103,6 +103,33 @@ const props = defineProps({
 .behind_user_content p {
   font-size: 16px;
 }
-@media screen and (max-width: 991.98px) {
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .behind_user_modal .modal-body {
+    padding: 1rem;
+  }
+  .behind_user_modal button.btn-close {
+    position: absolute;
+    right: 24px;
+    top: 21px;
+  }
+  .behind_user_content p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+}
+@media (max-width: 376.98px) {
+  .behind_user_content {
+    padding: 9px;
+  }
+}
+@media (max-width: 321.98px) {
 }
 </style>

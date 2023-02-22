@@ -247,7 +247,7 @@ export default {
               <div class="col-md-12">
                 <div class="row justify-content-center">
                   <div
-                    class="col-md-3"
+                    class="col-lg-3 col-md-6 mb-lg-0 mb-md-4 mb-3"
                     v-for="(finditem, index) in finditems"
                     :key="index"
                   >
@@ -285,11 +285,11 @@ export default {
                   <p>Currently, we are only dealing homes in Kerala</p>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-lg-8 col-md-6">
                 <!-- <SlidersProperty :proDetails="proDetails" /> -->
                 <SlidersProperty :proDetails="propertyList" />
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
                 <FormsDontMissOut></FormsDontMissOut>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default {
         <div class="howwork">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0">
                 <div class="howwork_image">
                   <img
                     src="/images/how_work_side.png"
@@ -307,7 +307,7 @@ export default {
                   />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="howwork_content">
                   <span>We Make It Easy</span>
                   <h5>How LLC Co-Ownership Works ?</h5>
@@ -498,124 +498,73 @@ export default {
   margin-top: 10px;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 1199.98px) {
-  .coin_content h2 {
-    font-size: 37px;
-  }
-  .find_title h3 {
-    font-size: 31px;
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+  .property {
+    padding: 60px 0 0;
   }
   .find_content_box {
-    padding: 0 0px;
-  }
-  .property_title h4 {
-    font-size: 28px;
-  }
-  .property_title span {
-    font-size: 18px;
+    padding: 20px 14px;
   }
 }
-
-@media screen and (max-width: 991.98px) {
-  .coin_content h2 {
-    font-size: 29px;
+@media (max-width: 991.98px) {
+  .coin_content h2,
+  .find_title h3,
+  .property_title h4,
+  .howwork_content h5 {
+    font-size: 32px;
   }
-  .coin_content p {
-    font-size: 15px;
-  }
-  .button_one {
-    margin-top: 16px;
-    padding: 9px 16px;
-    font-size: 14px;
-  }
-  .find_title h3 {
-    font-size: 26px;
-  }
-  .find_title {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .find_content_box_title span {
-    font-size: 25px;
-    margin-bottom: 33px;
+  .button_one[data-v-02281a80] {
     margin-top: 18px;
   }
-  .find_content_box_para p {
-    font-size: 14px;
+  .property[data-v-02281a80] {
+    padding: 25px 0 0;
   }
-  .property_title span {
-    font-size: 16px;
-  }
-  .property_title h4 {
-    font-size: 25px;
-  }
-  .property_title p {
-    font-size: 13px;
-  }
-  .howwork_content span {
-    font-size: 16px;
-  }
-  .howwork_content h5 {
-    font-size: 28px;
-  }
-  .howwork_content p {
-    font-size: 14px;
+  .howwork[data-v-02281a80] {
+    padding: 30px 0;
   }
 }
-
-@media screen and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .coin_content h2,
+  .find_title h3,
+  .property_title h4,
+  .howwork_content h5 {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
   .cowin {
-    padding: 35px 0;
-  }
-  .coin_content h2 {
-    font-size: 23px;
-  }
-  .coin_content p {
-    font-size: 14px;
+    padding: 30px 0;
   }
   .find {
-    padding: 35px 0 35px;
-  }
-  .find_title h3 {
-    font-size: 23px;
+    padding: 0px 0;
   }
   .find_title {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
-  .find_content_box {
-    padding: 0 30px;
-    margin-bottom: 35px;
+  .property_title span,
+  .property_title p {
+    font-size: 16px;
   }
-  .find .col-md-4:not(:last-child) .find_content_box:before {
-    height: 1px;
-    right: 0;
-    top: unset;
-    width: 100%;
-    bottom: -20px;
-  }
-  .howwork,
-  .property {
-    padding: 35px 0;
-  }
-  .property_title span {
-    font-size: 14px;
-  }
-  .property_title h4 {
-    font-size: 24px;
-  }
-  .howwork_content {
-    margin-top: 18px;
+  .property_title {
     text-align: center;
+    margin-bottom: 30px;
   }
-  .howwork_content span {
-    font-size: 14px;
+  .coin_content p {
+    font-size: 16px;
+    padding: 0 37px;
   }
-  .howwork_content h5 {
-    font-size: 23px;
-    margin-bottom: 12px;
+  .find_title h3 {
+    line-height: 1.2;
   }
-  .howwork_content p {
-    font-size: 14px;
+  .howwork_content a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 321.98px) {
+  .coin_content p {
+    font-size: 16px;
+    padding: 0 13px;
   }
 }
 </style>

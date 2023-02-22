@@ -261,54 +261,45 @@ ul.address_list p span {
   cursor: pointer;
   font-weight: 500;
 }
-@media screen and (max-width: 991.98px) {
-  ul.address_list li {
-    font-size: 14px;
-    display: flex;
-    align-items: flex-start;
-    width: 445px;
-    text-align: initial;
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+  .form_box .input_field input.form-control[data-v-0f40efcb] {
+    width: 286px;
   }
 }
-@media screen and (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .form_box .input_field input.form-control {
+    width: 334px;
+  }
+}
+@media (max-width: 767.98px) {
+  .form_box .input_field input.form-control[data-v-0f40efcb][data-v-0f40efcb] {
+    width: 242px;
+    padding: 9px 0px 9px 31px;
+  }
+  .button_box button.form_submit[data-v-0f40efcb] {
     font-size: 14px;
-    padding: 9px 0 9px 26px;
-    width: 245px;
+    padding: 7.5px 20px;
   }
-  .form_box .input_field:before {
-    height: 15px;
-    left: 8px;
-    width: 13px;
+}
+@media (max-width: 321.98px) {
+  .form_box
+    .input_field
+    input.form-control[data-v-0f40efcb][data-v-0f40efcb][data-v-0f40efcb] {
+    width: 209px;
   }
-  .button_box button.form_submit {
-    font-size: 14px;
-    padding: 7px 15px;
-  }
-
   .form_box .input_field input.form-control::placeholder {
-    font-size: 14px;
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 13px;
   }
 
   .form_box .input_field input.form-control:-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .form_box .input_field input.form-control::-ms-input-placeholder {
-    font-size: 14px;
-  }
-  ul.address_list li {
-    width: 318px;
-  }
-}
-
-@media screen and (max-width: 321.98px) {
-  .form_box .input_field input.form-control {
-    width: 211px;
-  }
-  ul.address_list li {
-    font-size: 14px;
-    width: 284px;
+    font-size: 13px;
   }
 }
 </style>

@@ -24,7 +24,7 @@
   background: url(/images/home_banner_back_new.png);
   background-repeat: no-repeat !important;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 667px;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   position: absolute;
   content: "";
   height: 53%;
-  width: 47%;
+  width: 45%;
   left: 0;
   z-index: -9;
   background: #ffffff;
@@ -75,47 +75,92 @@
   color: #ffffff;
   transition: all 0.3s ease-out;
 }
-
-@media screen and (max-width: 2560px) {
-  .banner {
-    background-size: cover;
-  }
-}
-@media screen and (max-width: 1199.98px) {
-  .baneer_content h1 {
-    font-size: 39px;
-    line-height: 54px;
+@media (max-width: 1441.98px) {
+  .banner:before {
+    width: 41%;
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
+  .banner:before {
+    width: 47%;
+  }
+}
+@media (max-width: 1199.98px) {
   .banner {
-    height: 434px;
+    height: 502px;
+  }
+  .banner:before {
+    height: 58%;
   }
   .baneer_content h1 {
-    font-size: 29px;
-    line-height: 48px;
+    font-size: 33px;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner {
+    height: 377px;
+  }
+  .baneer_content h1 {
+    font-size: 24px;
+  }
+  .baneer_content p {
+    font-size: 16px;
+    margin-top: 18px;
   }
   .button_one {
     margin-top: 16px;
-    padding: 9px 16px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
-
-@media screen and (max-width: 767.98px) {
-  .baneer_content {
-    margin-top: 50px;
-  }
-  .baneer_content h1 {
-    font-size: 21px;
-    line-height: 33px;
-  }
-  .button_one {
-    padding: 9px 12px;
-  }
+@media (max-width: 767.98px) {
   .banner {
-    height: 272px;
+    height: 351px;
+    background: url(/images/home_banner_mobile.png);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+    margin-top: 150px;
+  }
+  .banner:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: -149px;
+    background: linear-gradient(262.3deg, #c4def3 5.46%, #cbe1f2 88.19%);
+  }
+  .baneer_content {
+    width: 74%;
+    position: absolute;
+    top: -103px;
+    z-index: 9;
+  }
+  .banner:before {
+    top: -367px;
+    z-index: 9;
+    width: 76%;
+    background: #ffffff8f;
+  }
+}
+@media (max-width: 376.98px) {
+  .baneer_content {
+    width: 78%;
+  }
+  .banner:before {
+    width: 85%;
+  }
+}
+@media (max-width: 321.98px) {
+  .baneer_content h1 {
+    font-size: 22px;
+  }
+  .baneer_content {
+    width: 85%;
+  }
+  .banner:before {
+    top: -377px;
+    width: 93%;
   }
 }
 </style>

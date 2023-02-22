@@ -115,7 +115,7 @@ export default {
     <NuxtLayout name="footer">
       <NuxtLayout name="subscribe">
         <div class="breadcrumb_list">
-          <div class="container-xl">
+          <div class="container-lg">
             <div class="row">
               <div class="col-md-12">
                 <nav
@@ -141,9 +141,9 @@ export default {
           </div>
         </div>
         <div class="top_details">
-          <div class="container-xl">
+          <div class="container-lg">
             <div class="row align-items-center">
-              <div class="col-md-8">
+              <div class="col-xl-8 col-lg-7 col-md-6 mb-4 mb-md-0">
                 <div class="top_details_property">
                   <h1>
                     {{
@@ -173,7 +173,7 @@ export default {
                   <small v-else> SOLD </small>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-xl-4 col-lg-5 col-md-6">
                 <div class="top_details_share">
                   <ul>
                     <li>
@@ -237,9 +237,9 @@ export default {
           </div>
         </div>
         <div class="proprty_details_bottom">
-          <div class="container-xl">
+          <div class="container-lg">
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-7 mb-5 mb-md-0">
                 <div class="proprty_details_bottom_content">
                   <div class="attributes">
                     <span class="pro_title">Attributes</span>
@@ -498,7 +498,7 @@ export default {
               <div class="col-md-12">
                 <div class="row justify-content-center">
                   <div
-                    class="col-md-3"
+                    class="col-lg-3 col-md-6 mb-3 mb-md-4 mb-lg-0"
                     v-for="(finditem, index) in finditems"
                     :key="index"
                   >
@@ -529,7 +529,7 @@ export default {
         <div class="howwork">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-lg-6 col-md-12 mb-3 mb-md-4 mb-lg-0">
                 <div class="howwork_image">
                   <img
                     src="/images/how_work_side.png"
@@ -538,7 +538,7 @@ export default {
                   />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="howwork_content">
                   <h5>Understanding ownership costs</h5>
                   <p>
@@ -646,7 +646,7 @@ export default {
 .top_details_share ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -801,7 +801,8 @@ span.pro_title {
 }
 
 .find_content_box {
-  padding: 20px 20px;
+  padding: 20px 30px;
+  margin: 0 19px;
   position: relative;
   height: 100%;
   background: #523174;
@@ -900,7 +901,11 @@ span.pro_title {
 
 .property_side_sticky {
   position: sticky;
-  top: 109px;
+  top: 110px;
+}
+.proprty_details_bottom_content {
+  position: sticky;
+  top: 110px;
 }
 .property_side_box_tour {
   border: 1px solid #523174;
@@ -1184,172 +1189,108 @@ span.pro_title {
   background-size: 0.8em;
 }
 
-@media screen and (max-width: 991.98px) {
-  .property_available span {
-    font-size: 14px;
-    padding: 7px 9px;
+@media (max-width: 1399.98px) {
+  .find_content_box {
+    margin: 0 10px;
   }
-  .proprty_status img {
-    margin-right: 7px;
-    width: 16px;
+}
+@media (max-width: 1199.98px) {
+  .find_content_box {
+    margin: 0;
+    padding: 20px 17px;
   }
-  .property_time span {
-    font-size: 14px;
-  }
-  .property_time {
-    margin-left: 35px;
-  }
-  .property_share_left img {
-    width: 20px !important;
-  }
-  .property_share_left {
-    padding: 7px 9px;
-  }
-  .property_share_left span {
-    font-size: 14px;
-  }
-  .property_title h1 {
-    font-size: 22px;
-  }
-  .property_location img {
-    width: 11px;
-  }
-  .property_location span {
-    font-size: 14px;
-  }
-  .property_price h2 {
-    font-size: 34px;
-  }
-  .property_price h2 span {
-    font-size: 25px;
-  }
-  .wishlist img {
-    width: 25px;
-  }
-  .property_side_box_button button {
-    font-size: 13px;
-  }
-  .property_location {
-    margin-top: 6px;
-  }
-  .property_title {
-    margin-top: 15px;
-    padding-top: 15px;
-  }
-  .whole_price p {
-    font-size: 15px;
-  }
-  .attributes p,
-  .build_year p {
-    font-size: 15px;
-  }
-  .property_amenities span,
-  .property_desc span,
-  .property_floor span.property_floor_title,
-  .property_vtour span.property_vtour_title {
-    font-size: 18px;
-    margin-bottom: 18px;
-  }
-  .property_desc p:not(:last-child) {
-    margin-bottom: 9px;
+}
+@media (max-width: 991.98px) {
+  span.pro_title {
+    font-size: 21px;
+    margin-bottom: 13px;
   }
   .property_desc p {
     font-size: 15px;
   }
-
-  .property_amenities ul li p {
-    font-size: 16px;
-    margin-left: 8px;
+  .property_amenities ul li {
+    width: 100%;
   }
-  .similar_property_title h2 {
-    font-size: 24px;
+  .find_title h3 {
+    font-size: 33px;
   }
-  .similar_property {
-    padding: 35px 0 5px;
+  .find_title {
+    margin-bottom: 24px;
   }
-  .property_side_box_estimate span.title {
-    font-size: 20px;
-    width: 87%;
+  .find_content_box {
+    margin: 10px;
+    padding: 20px 30px;
   }
-  .property_side_box_main {
-    padding: 20px 14px;
-  }
-  .estimate_box_fin_finance strong,
-  .estimate_box_fin_expence strong {
-    font-size: 16px;
-  }
-  .estimate_box_fin_finance p,
-  .estimate_box_fin_expence p {
-    font-size: 16px;
-  }
-  .estimate_box_fin_finance {
-    margin-bottom: 17px;
-  }
-  .estimate_box_final_cost strong {
-    font-size: 39px;
-  }
-  .estimate_box_final_cost strong span {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .property_available span {
-    font-size: 11px;
-  }
-  .property_time {
-    margin-left: 20px;
-  }
-  .property_share_left span {
-    font-size: 11px;
-  }
-  .property_share_left img {
-    width: 16px !important;
-  }
-  .property_location img {
-    width: 12px;
-  }
-  .property_location span {
+  .estimate_content_main ul li span:first-child {
     font-size: 15px;
   }
-  .whole_price p {
-    font-size: 14px;
-  }
-  .attributes p,
-  .build_year p,
-  .whole_price p {
-    font-size: 14px;
-  }
-  .property_key_points {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .property_amenities span,
-  .property_desc span,
-  .property_floor span.property_floor_title,
-  .property_vtour span.property_vtour_title {
+  .estimate_content_footer ul li:not(:last-child) span:first-child {
     font-size: 17px;
-    margin-bottom: 14px;
   }
-  .property_side_box {
-    margin-top: 30px;
+  .estimate_content_footer ul li:not(:last-child) span:last-child {
+    font-size: 17px;
   }
-  .proprty_status {
-    flex-direction: column;
-    align-items: flex-start !important;
+  .howwork_content h5 {
+    font-size: 26px;
   }
-
-  .property_share_left {
-    margin-top: 15px;
+  .howwork {
+    padding: 0px 0 60px;
   }
-
-  .wishlist {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .expence_modal_content span.title {
+    font-size: 26px;
   }
-
-  .proprty_details_bottom_content {
-    position: relative;
+  .total_month_expence,
+  .total_year_expence {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767.98px) {
+  .total_year_expence,
+  .total_month_expence {
+    padding: 0 25px;
+  }
+  .expence_modal_content ul {
+    padding: 0px 35px;
+  }
+  .find {
+    padding: 0px 0 50px;
+  }
+  .find_title h3 {
+    font-size: 32px;
+  }
+  .howwork_content h5 {
+    font-size: 25px;
+  }
+  .top_details_share ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 321.98px) {
+  .expence_modal_content span.title {
+    font-size: 23px;
+  }
+  .expence_modal_content p {
+    font-size: 14px;
+  }
+  .expence_modal_content ul {
+    padding: 0px 10px;
+  }
+  .expence_modal_content ul li {
+    font-size: 14px;
+  }
+  .total_year_expence,
+  .total_month_expence {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  .total_month_expence span {
+    padding: 7px;
+  }
+  .total_year_expence span {
+    padding: 7px;
+  }
+  .find_title h3 {
+    font-size: 26px;
   }
 }
 </style>

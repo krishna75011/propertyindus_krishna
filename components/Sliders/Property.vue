@@ -23,16 +23,20 @@ const props = defineProps({
       :slide-multiple="true"
       :initSlide="1"
       :alwaysRefreshClones="true"
+      autoplay
       :breakpoints="{
         1200: {
           visibleSlides: 2,
         },
         769: {
-          visibleSlides: 2,
+          visibleSlides: 1,
+          gap: 0,
         },
         426: {
           visibleSlides: 1,
           fade: true,
+          bullets: false,
+          bulletsOutside: false,
         },
       }"
     >
@@ -59,20 +63,23 @@ const props = defineProps({
 .fixed-height-custom {
   height: 435px;
 }
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
   .fixed-height-custom {
-    height: 435px;
+    height: 416px;
   }
 }
-@media screen and (max-width: 991.98px) {
-  .fixed-height-custom {
-    height: 435px;
-  }
+@media (max-width: 575.98px) {
 }
-@media screen and (max-width: 767.98px) {
+
+@media (max-width: 321.98px) {
   .fixed-height-custom {
-    padding: 0 25px;
-    height: 435px;
+    height: 457px;
   }
 }
 </style>

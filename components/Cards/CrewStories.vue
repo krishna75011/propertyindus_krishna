@@ -113,13 +113,5 @@ const props = defineProps({
   font-family: "Manrope", sans-serif;
 }
 
-@media screen and (max-width: 1199.98px) {
-  .crewstories_box {
-    padding: 15px;
-  }
-}
 
-@media screen and (max-width: 767.98px) {
-
-}
 </style>

@@ -12,42 +12,42 @@ const BehindUsersItems = ref([
     image: "/images/members/COO.png",
     name: "Jacob Mathew",
     degination: "Chief Operating Officer",
-    bio: "Jacob is the Chief Operating Officer at RedBuyers, where he is responsible for maintaining and driving operational results of the organization. Besides bringing strong leadership and strategic vision to the organization, Jacob plays pays a vital role in driving results, fuelling growth, and increasing the overall efficiency of the organization.",
+    bio: "Jacob is the Chief Operating Officer at Propertyindus, where he is responsible for maintaining and driving operational results of the organization. Besides bringing strong leadership and strategic vision to the organization, Jacob plays pays a vital role in driving results, fuelling growth, and increasing the overall efficiency of the organization.",
   },
   {
     idn: "CPO",
     image: "/images/members/CPO.png",
     name: "Win Babu",
     degination: "Chief Project Officer",
-    bio: "Win is the Chief Project Officer at RedBuyers. He plays an important role in scaling up the business by optimizing all project-oriented operations within the organization. With his strong understanding of managing large-scale projects, he drives efficiency and linkages between all major strategic projects in the organization to accelerate growth.",
+    bio: "Win is the Chief Project Officer at Propertyindus. He plays an important role in scaling up the business by optimizing all project-oriented operations within the organization. With his strong understanding of managing large-scale projects, he drives efficiency and linkages between all major strategic projects in the organization to accelerate growth.",
   },
   {
     idn: "CIO",
     image: "/images/members/CIO.png",
     name: "Krishna Saha",
     degination: "Chief Innovation Officer",
-    bio: "Krishna is the Chief Innovation Officer at RedBuyers, where he oversees all the innovations within the organization. He works across the entire organization to help identify, define and scale the best ideas besides playing a major role in our research and development team to explore new technologies.",
+    bio: "Krishna is the Chief Innovation Officer at Propertyindus, where he oversees all the innovations within the organization. He works across the entire organization to help identify, define and scale the best ideas besides playing a major role in our research and development team to explore new technologies.",
   },
   {
     idn: "CDO",
     image: "/images/members/CDO.png",
     name: "Heera Maria",
     degination: "Chief Digital Officer",
-    bio: "Here is the Chief Marketing Officer at RedBuyers. She is responsible for overseeing the planning and execution of all our marketing and advertising initiatives. She acts as a growth driver and an expert at anticipating market trends and creating effective marketing strategies.",
+    bio: "Here is the Chief Marketing Officer at Propertyindus. She is responsible for overseeing the planning and execution of all our marketing and advertising initiatives. She acts as a growth driver and an expert at anticipating market trends and creating effective marketing strategies.",
   },
   {
     idn: "CCO",
     image: "/images/members/SCCO.png",
     name: "Soumyashree Biswa",
     degination: "Chief Communications Officer",
-    bio: "Soumya is a Sales Representative at RedBuyers. She closely watches the market trends and enjoys helping customers in making the right decisions. She works as an integral part of the sales team and works with different departments to make sure that all our customers are served better.",
+    bio: "Soumya is a Sales Representative at Propertyindus. She closely watches the market trends and enjoys helping customers in making the right decisions. She works as an integral part of the sales team and works with different departments to make sure that all our customers are served better.",
   },
   {
     idn: "CCO2",
     image: "/images/members/CCO.png",
     name: "Srijana Lama",
     degination: "Chief Customer Officer",
-    bio: "Srijana is a Sales Representative at RedBuyers. She is an expert at initializing and managing relationships with customers. She enjoys talking to customers and helping them in understanding the market trends so that they can take well-informed decisions.",
+    bio: "Srijana is a Sales Representative at Propertyindus. She is an expert at initializing and managing relationships with customers. She enjoys talking to customers and helping them in understanding the market trends so that they can take well-informed decisions.",
   },
 ]);
 
@@ -206,9 +206,30 @@ const crewstoriesItems = ref([
   margin-bottom: 45px;
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .behind_scenes[data-v-ed9bcff3] {
+    padding: 40px 0 0;
+  }
+  .our_crew_content p[data-v-ed9bcff3] {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our_crew[data-v-ed9bcff3] {
+    padding: 30px 0;
+  }
+  .our_crew_content h2,
+  .behind_scenes_title h3 {
+    font-size: 30px;
+    margin-bottom: 9px;
+  }
+  .our_crew_content p[data-v-ed9bcff3] {
+    font-size: 16spx;
+  }
 }
 
-@media screen and (max-width: 767.98px) {
-}
 </style>

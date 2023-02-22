@@ -81,18 +81,21 @@ const props = defineProps({
   background-size: 1.1rem;
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
   .accordion-button {
-    font-size: 16px;
-    padding: 11px 0;
-  }
-  .accordion-body p {
-    font-size: 14px;
+    padding: 14px 0 14px 40px;
+    font-size: 17px;
   }
   .accordion-button::after {
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
+    left: 13px;
   }
+}
+@media (max-width: 575.98px) {
 }
 </style>

@@ -45,7 +45,7 @@
   background-position: center;
   background-size: 100% 100%;
   height: 90%;
-  width: 41%;
+  width: 22%;
   right: 0;
   z-index: -9;
   top: -4px;
@@ -65,20 +65,69 @@
 .baneer_content p:not(:last-child) {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 2560px) {
-}
-@media screen and (max-width: 1199.98px) {
+
+@media (max-width: 1441.98px) {
+  .banner:before {
+    width: 39%;
+  }
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
+  .banner:before {
+    width: 41%;
+  }
 }
-
-@media screen and (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .banner {
+    padding: 40px 0;
+  }
+  .baneer_content h1 {
+    font-size: 34px;
+  }
+  .banner:before {
+    height: 84%;
+  }
 }
-
-@media screen and (max-width: 376.98px) {
+@media (max-width: 991.98px) {
+  .baneer_content h1 {
+    font-size: 25px;
+  }
+  .baneer_content p {
+    font-size: 15px;
+  }
+  .baneer_content p:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .banner:before {
+    height: 70%;
+  }
 }
-
-@media screen and (max-width: 321.98px) {
+@media (max-width: 767.98px) {
+  .banner {
+    padding: 320px 0 40px;
+  }
+  .banner:before {
+    height: 40%;
+    width: 89%;
+  }
+  .baneer_content {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+}
+@media (max-width: 376.98px) {
+  .banner:before {
+    height: 37%;
+  }
+  .baneer_content h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 321.98px) {
+  .banner:before {
+    height: 32%;
+    width: 94%;
+  }
 }
 </style>

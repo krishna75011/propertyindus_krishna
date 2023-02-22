@@ -4,12 +4,14 @@
     <div class="subscribe">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-6 col-lg-5">
+          <div class="col-9 col-md-6 col-lg-6 col-xl-5 mb-4 mb-md-0">
             <div class="sub_side_image">
               <img src="/images/subside.png" class="img-fluid" alt="" />
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 offset-lg-2">
+          <div
+            class="col-10 col-md-5 col-lg-5 col-xl-4 offset-xl-2 offset-lg-0 offset-md-1"
+          >
             <div class="subscribe_content">
               <h6>Don't Miss Out</h6>
               <p>
@@ -80,38 +82,38 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 2560px) {
-  .subscribe {
-    background-size: cover;
-  }
+@media (max-width: 1399.98px) {
 }
-
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
   .subscribe_content h6 {
-    font-size: 29px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   .subscribe_content p {
-    font-size: 13px;
-  }
-  .subscribe_form {
-    margin-top: 20px;
+    font-size: 14px;
   }
 }
-
-@media screen and (max-width: 767.98px) {
-  .subscribe {
-    background-position: left;
-    padding: 30px 0;
+@media (max-width: 767.98px) {
+  .subscribe:before {
+    background: url(/images/subback_mobile.png);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 94%;
+    width: 92%;
   }
-  .subscribe_content {
-    padding: 0 32px;
+  .subscribe {
+    padding: 60px 0;
   }
   .subscribe_content h6 {
-    font-size: 25px;
+    font-size: 28px;
   }
-  .subscribe_form {
-    padding: 0 40px;
+}
+@media (max-width: 321.98px) {
+  .subscribe_content h6 {
+    font-size: 26px;
   }
 }
 </style>

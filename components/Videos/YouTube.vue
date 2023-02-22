@@ -28,6 +28,23 @@ const props = defineProps({
   border-radius: 15px;
   box-shadow: 0px 0px 5px 2px #0000001f;
   overflow: hidden;
-  width: 50%;
+  width: 60%;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .video_box {
+    width: 80%;
+  }
+}
+@media (max-width: 767.98px) {
+  .video_box {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
 }
 </style>

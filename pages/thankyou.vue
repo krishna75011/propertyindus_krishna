@@ -22,12 +22,12 @@
   <div class="thankyou_box">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 col-7 mb-4 mb-md-0">
           <div class="thankyou_box_image">
             <img src="/images/thankyou_side.png" class="img-fluid" alt="" />
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 col-11">
           <div class="thankyou_box_content_box">
             <div class="thankyou_box_content">
               <p>
@@ -102,56 +102,17 @@
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 2560px) {
+@media (max-width: 1399.98px) {
 }
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
 }
-
-@media screen and (max-width: 991.98px) {
-  .thankyou_box_content h1 {
-    font-size: 59px;
-    margin-bottom: 16px;
-  }
-  .thankyou_box_content img.img-fluid {
-    width: 296px;
-    margin-bottom: 15px;
-  }
-  .thankyou_box_content p {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-  }
-  .thankyou_box_content p:not(:last-child) {
-    margin-bottom: 14px;
-  }
-  .back_home a {
-    padding: 10px 15px;
-    margin-top: 28px;
-    font-size: 15px;
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .thankyou_box_content_box {
+    height: 200%;
   }
 }
-
-@media screen and (max-width: 767.98px) {
-  .thankyou_box_content p {
-    line-height: 1.3;
-  }
-  .thankyou_box_content img.img-fluid {
-    width: 231px;
-    margin-bottom: 12px;
-  }
-  .thankyou_box_content h1 {
-    font-size: 45px;
-    margin-bottom: 14px;
-  }
-}
-
-@media screen and (max-width: 376.98px) {
-}
-
-@media screen and (max-width: 321.98px) {
-  .thankyou_box_content h1 {
-    font-size: 39px;
-    margin-bottom: 11px;
-  }
+@media (max-width: 575.98px) {
 }
 </style>

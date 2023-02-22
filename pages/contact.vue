@@ -87,7 +87,7 @@ function onSubmit() {
       ><div class="lead_new">
         <div class="container">
           <div class="row align-items-end">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-5 mb-md-0 mb-4">
               <div class="lead_box">
                 <h1>Contact US</h1>
                 <p>
@@ -96,13 +96,13 @@ function onSubmit() {
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-7">
               <div class="form_box contact_custom">
                 <Form
                   @submit="onSubmit()"
                   :validation-schema="schema"
                   v-slot="{ errors }"
-                  class="row g-4 align-items-center"
+                  class="row g-lg-4 g-md-3 g-3 align-items-center"
                 >
                   <div class="col-md-12 select_box">
                     <label class="form-label">
@@ -257,7 +257,7 @@ function onSubmit() {
   background-position: center;
   background-size: 100% 100%;
   height: 64%;
-  width: 45%;
+  width: 30%;
   left: 0;
   z-index: -9;
   top: 0;
@@ -382,12 +382,61 @@ function onSubmit() {
   color: #7e7e7e;
   font-size: 15px;
 }
-@media screen and (max-width: 1199.98px) {
-}
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1441.98px) {
+  .lead_new:before {
+    width: 45%;
+  }
 }
-
-@media screen and (max-width: 767.98px) {
+@media (max-width: 1399.98px) {
+  .lead_new:before {
+    width: 45%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .lead_new {
+    padding: 30px 0;
+  }
+  .lead_new:before {
+    width: 47%;
+    height: 57%;
+  }
+}
+@media (max-width: 991.98px) {
+  .check_box .form-check-label {
+    font-size: 15px;
+  }
+  .contact_custom .select_box label {
+    font-size: 17px;
+  }
+  .contact_custom .custom_input2 label {
+    font-size: 16px;
+  }
+  .lead_box h1 {
+    font-size: 32px;
+    margin-bottom: 7px;
+  }
+  .lead_box p {
+    font-size: 16px;
+    margin-right: 27px;
+  }
+  .lead_new:before {
+    width: 46%;
+    height: 46%;
+  }
+}
+@media (max-width: 767.98px) {
+  .lead_new:before {
+    width: 86%;
+    height: 33%;
+    opacity: 0.3;
+  }
+}
+@media (max-width: 321.98px) {
+  .lead_new:before {
+    width: 98%;
+    height: 29%;
+    opacity: 0.3;
+  }
 }
 </style>

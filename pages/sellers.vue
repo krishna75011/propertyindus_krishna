@@ -503,9 +503,9 @@ const submitForm = async () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12 mt-4 mt-md-5 pt-2 pt-md-3">
+                <div class="col-md-12 mt-md-0 mt-lg-5 pt-md-0 pt-lg-3">
                   <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-5 mb-lg-0">
                       <div class="whosell_image">
                         <img
                           src="/images/whosell.png"
@@ -514,7 +514,7 @@ const submitForm = async () => {
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                       <div class="whosell_content">
                         <h3>Who sells properties to us!</h3>
                         <p>
@@ -571,7 +571,7 @@ const submitForm = async () => {
                   @submit="gotoPersonalmanual"
                   :validation-schema="schemaManualaddress"
                   v-slot="{ errors }"
-                  class="row g-5 align-items-center"
+                  class="row g-3 g-md-4 g-lg-5 align-items-center"
                 >
                   <div class="col-md-6 custom_input">
                     <label class="form-label"> STREET ADDRESS </label>
@@ -645,7 +645,7 @@ const submitForm = async () => {
         <div class="step1" v-if="step1">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -704,7 +704,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form
                     @submit="goStep2"
@@ -723,73 +723,81 @@ const submitForm = async () => {
                       />
                       <div class="invalid-feedback">{{ errors.name }}</div>
                     </div>
-                    <div class="col-md-12 custom_input2">
-                      <label class="form-label"> Phone </label>
-                      <Field
-                        type="text"
-                        name="phone"
-                        class="form-control"
-                        v-model="phone"
-                        :class="{ 'is-invalid': errors.phone }"
-                      />
-                      <div class="invalid-feedback">{{ errors.phone }}</div>
-                    </div>
-                    <div class="col-md-12 custom_input2">
-                      <label class="form-label"> Email </label>
-                      <Field
-                        type="text"
-                        name="email"
-                        class="form-control"
-                        v-model="email"
-                        :class="{ 'is-invalid': errors.email }"
-                      />
-                      <div class="invalid-feedback">{{ errors.email }}</div>
-                    </div>
-                    <div class="col-md-12 select_box">
-                      <label class="form-label">
-                        Current country of residence
-                      </label>
-                      <div class="drop">
-                        <v-select
-                          class="style-chooser"
-                          v-model="selectResidence"
-                          :options="residence"
-                          :clearable="disable"
-                          :clearSearchOnSelect="disable"
-                          :filterable="disable"
-                          :searchable="disable"
-                        >
-                        </v-select>
+                    <div class="col-md-12">
+                      <div class="custom_input2">
+                        <label class="form-label"> Phone </label>
+                        <Field
+                          type="text"
+                          name="phone"
+                          class="form-control"
+                          v-model="phone"
+                          :class="{ 'is-invalid': errors.phone }"
+                        />
+                        <div class="invalid-feedback">{{ errors.phone }}</div>
                       </div>
                     </div>
-                    <div class="col-md-12 select_box">
-                      <label class="form-label cw"> Are you homeowner </label>
-                      <div class="redio_flex">
-                        <div class="form-check form-check-inline">
-                          <Field
-                            class="form-check-input"
-                            type="radio"
-                            name="homeowner"
-                            id="inlineRadio1"
-                            value="1"
-                            v-model="homeowner"
-                          />
-                          <label class="form-check-label" for="inlineRadio1"
-                            >Yes</label
+                    <div class="col-md-12">
+                      <div class="custom_input2">
+                        <label class="form-label"> Email </label>
+                        <Field
+                          type="text"
+                          name="email"
+                          class="form-control"
+                          v-model="email"
+                          :class="{ 'is-invalid': errors.email }"
+                        />
+                        <div class="invalid-feedback">{{ errors.email }}</div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="select_box">
+                        <label class="form-label">
+                          Current country of residence
+                        </label>
+                        <div class="drop">
+                          <v-select
+                            class="style-chooser"
+                            v-model="selectResidence"
+                            :options="residence"
+                            :clearable="disable"
+                            :clearSearchOnSelect="disable"
+                            :filterable="disable"
+                            :searchable="disable"
                           >
+                          </v-select>
                         </div>
-                        <div class="form-check form-check-inline">
-                          <Field
-                            class="form-check-input"
-                            type="radio"
-                            name="homeowner"
-                            id="inlineRadio2"
-                            value="0"
-                            v-model="homeowner"
-                          />
-                          <label class="form-check-label" for="inlineRadio2"
-                            >No</label
-                          >
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="select_box">
+                        <label class="form-label cw"> Are you homeowner </label>
+                        <div class="redio_flex">
+                          <div class="form-check form-check-inline">
+                            <Field
+                              class="form-check-input"
+                              type="radio"
+                              name="homeowner"
+                              id="inlineRadio1"
+                              value="1"
+                              v-model="homeowner"
+                            />
+                            <label class="form-check-label" for="inlineRadio1"
+                              >Yes</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <Field
+                              class="form-check-input"
+                              type="radio"
+                              name="homeowner"
+                              id="inlineRadio2"
+                              value="0"
+                              v-model="homeowner"
+                            />
+                            <label class="form-check-label" for="inlineRadio2"
+                              >No</label
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -805,7 +813,7 @@ const submitForm = async () => {
         <div class="step2" v-if="step2">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -864,7 +872,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form
                     @submit="goStep3"
@@ -956,7 +964,7 @@ const submitForm = async () => {
         <div class="step3" v-if="step3">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -1015,7 +1023,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form @submit="goStep4" class="row g-5 align-items-center">
                     <div class="col-md-12">
@@ -1063,7 +1071,7 @@ const submitForm = async () => {
         <div class="step4" v-if="step4">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -1122,7 +1130,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form @submit="goStep5" class="row g-4 align-items-center">
                     <div class="col-md-12">
@@ -1215,7 +1223,7 @@ const submitForm = async () => {
         <div class="step5" v-if="step5">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -1274,7 +1282,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form @submit="goStep6" class="row g-5 align-items-center">
                     <div class="col-md-12">
@@ -1372,7 +1380,7 @@ const submitForm = async () => {
         <div class="step5" v-if="step6">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7 p-0">
+              <div class="col-xl-7 p-0">
                 <div class="step_box">
                   <div class="step_box_sticky">
                     <div class="step_list">
@@ -1431,7 +1439,7 @@ const submitForm = async () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 p-0">
+              <div class="col-xl-5 p-0">
                 <div class="form_box">
                   <Form @submit="submitForm" class="row g-5 align-items-center">
                     <div class="col-md-12">
@@ -1576,12 +1584,9 @@ const submitForm = async () => {
   text-align: center;
   margin-bottom: -80px;
 }
-.customhight .seller_points_work_box_content_box {
-  padding: 48px 18px 25px;
-}
 .seller_points_work_box_image img {
   width: 100%;
-  height: 294px;
+  height: 360px;
 }
 
 .seller_points_work_box_title span {
@@ -1653,7 +1658,9 @@ const submitForm = async () => {
   height: 100%;
   z-index: 9;
   width: 100%;
-  padding: 29px;
+  padding: 344px;
+  display: flex;
+  align-items: center;
 }
 
 .step_box:before {
@@ -1759,6 +1766,7 @@ const submitForm = async () => {
   margin-top: 60px;
   margin-bottom: 45px;
   margin-left: 65px;
+  margin-right: 79px;
 }
 .step_button {
   margin-left: 65px;
@@ -1843,18 +1851,94 @@ const submitForm = async () => {
   display: flex;
   align-items: center;
 }
-
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1441.98px) {
+  .step_box {
+    padding: 20px;
+  }
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
+  .customhight .seller_points_work_box_content_box {
+    padding: 48px 18px 25px;
+  }
 }
+@media (max-width: 1199.98px) {
+  .seller_points_title h2 {
+    font-size: 26px;
+  }
+  .seller_points_work_box_image img {
+    height: 244px;
+  }
+  .whosell_content h3 {
+    font-size: 27px;
+  }
+  .seller_points_work_box_content_box {
+    margin: 0 45px 0 10px;
+  }
+  .step_box {
+    padding: 50px;
+  }
+  .form_box {
+    height: auto;
+  }
+  .select_box label {
+    width: auto;
+  }
 
-@media screen and (max-width: 767.98px) {
+  .custom_dflex label {
+    width: auto;
+    margin-right: 20px;
+  }
+  .custom_dflex {
+    width: auto;
+  }
+  .select_box {
+    width: 33.3%;
+  }
+  .drop {
+    width: 57%;
+  }
 }
-
-@media screen and (max-width: 376.98px) {
+@media (max-width: 991.98px) {
+  .seller_points_title span {
+    font-size: 15px;
+  }
+  .seller_points_title p {
+    font-size: 15px;
+  }
+  .seller_points_work_box_title span {
+    font-size: 18px;
+  }
+  .seller_points_work_box_content p {
+    font-size: 15px;
+  }
+  .customhight .seller_points_work_box_content_box {
+    padding: 25px 18px 25px;
+  }
+  .seller_points_work_box_image {
+    padding: 0 0 0 40px;
+  }
+  .seller_points_work_box_image img {
+    height: 192px;
+  }
+  .seller_points_work_box_content_box {
+    margin: 0 45px -45px 10px;
+  }
 }
-@media screen and (max-width: 321.98px) {
+@media (max-width: 767.98px) {
+  .seller_points_work_box_image img {
+    height: 234px;
+  }
+  .whosell_content p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 321.98px) {
+  .whosell_content h3 {
+    font-size: 21px;
+  }
+  .whosell_content a {
+    font-size: 16px;
+  }
 }
 </style>

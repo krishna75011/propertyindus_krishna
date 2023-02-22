@@ -54,11 +54,11 @@ page.value = localStorage.getItem("pageName");
 email.value = localStorage.getItem("email");
 agent.value = localStorage.getItem("agent");
 user.value = localStorage.getItem("user");
-localStorage.removeItem("formName");
-localStorage.removeItem("pageName");
-localStorage.removeItem("email");
-localStorage.removeItem("agent");
-localStorage.removeItem("user");
+// localStorage.removeItem("formName");
+// localStorage.removeItem("pageName");
+// localStorage.removeItem("email");
+// localStorage.removeItem("agent");
+// localStorage.removeItem("user");
 
 function onSubmit() {
   const formdata = JSON.stringify({
@@ -106,7 +106,9 @@ function onSubmit() {
             </h1>
             <div class="image_leade_box">
               <img src="/images/leads_side.png" alt="next" />
-              <NuxtLink :to="page"> Back </NuxtLink>
+              <NuxtLink :to="page" class="d-md-none d-lg-block d-none">
+                Back
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -176,6 +178,9 @@ function onSubmit() {
                 />
               </div>
               <div class="col-md-12 custom_submit_button">
+                <NuxtLink :to="page" class="d-md-block d-lg-none">
+                  Back
+                </NuxtLink>
                 <button type="submit" class="form_submit">Next</button>
               </div>
             </Form>
@@ -237,17 +242,59 @@ function onSubmit() {
   right: -14px;
   top: -5px;
 }
-@media screen and (max-width: 1199.98px) {
-}
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
 }
-
-@media screen and (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .lead_box h1 {
+    font-size: 30px;
+  }
 }
-
-@media screen and (max-width: 376.98px) {
+@media (max-width: 991.98px) {
+  .lead_box h1 {
+    font-size: 23px;
+  }
+  .lead_box img {
+    width: 100%;
+  }
+  .custom_submit_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .custom_submit_button a {
+    background: #000000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    padding: 11px 23px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 5px;
+  }
 }
-@media screen and (max-width: 321.98px) {
+@media (max-width: 767.98px) {
+  .lead_box:before {
+    content: none;
+  }
+  .lead_new {
+    padding: 35px 0;
+  }
+  .lead_box {
+    padding: 0 45px 25px;
+  }
+}
+@media (max-width: 375.98px) {
+  .lead_box h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 321.98px) {
+  .lead_box,
+  .form_box {
+    padding: 0 20px 25px;
+  }
 }
 </style>

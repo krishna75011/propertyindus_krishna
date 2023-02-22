@@ -70,7 +70,7 @@ function onSubmit() {
 .dont_miss_out_box {
   background: #fff;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  height: 86%;
+  height: 85.4%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,25 +164,34 @@ function onSubmit() {
   margin-top: 35px;
   text-align: center;
 }
-
-@media screen and (max-width: 991.98px) {
-  .form_submit {
-    margin-top: 16px;
-    padding: 9px 16px;
-    font-size: 14px;
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+  .dont_miss_out_box_content span {
+    font-size: 29px;
   }
-  .button_box {
-    margin-top: 8px;
-  }
-  .radio_box span {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-  .radio_box {
-    margin-top: 13px;
-  }
-  .radio_box label {
+  .dont_miss_out_box_content p {
     font-size: 15px;
   }
+  .form_submit {
+    padding: 7px 33px;
+  }
+  .check_box .form-check-label {
+    font-size: 15px;
+  }
+  .dont_miss_out_box {
+    height: 84%;
+  }
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .dont_miss_out_box {
+    height: auto;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    padding: 40px;
+  }
+}
+@media (max-width: 575.98px) {
 }
 </style>

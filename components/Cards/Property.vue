@@ -153,110 +153,24 @@ const props = defineProps({
 .wishlist img {
   width: 28px;
 }
-@media screen and (max-width: 1199.98px) {
-  .property_eni span:not(:last-child):before {
-    right: -21px;
-  }
-  .property_image img {
-    height: 255px;
-  }
-  .property_location {
-    align-items: flex-start;
-  }
-
-  .property_location img {
-    margin-top: 1px;
-  }
+@media (max-width: 1399.98px) {
 }
-@media screen and (max-width: 991.98px) {
-  .property_eni span:not(:last-child):before {
-    right: -39px;
-  }
-  .property_image img {
-    height: 180px;
-  }
-  .property_image .status {
-    font-size: 12px;
-    padding: 4px 9px;
-  }
-  .property_content {
-    padding: 11px 17px;
-  }
-  .property_name a {
-    font-size: 18px;
-  }
-  .property_name {
-    margin-bottom: 8px;
-  }
+@media (max-width: 1199.98px) {
   .property_price p {
-    font-size: 26px;
-  }
-  .property_price p span {
-    font-size: 15px;
-  }
-  .wishlist img {
-    width: 23px;
-  }
-  .property_location img {
-    width: 15px;
+    font-size: 17px;
   }
   .property_location p {
-    font-size: 13px;
-    margin-left: 5px;
-  }
-  .property_eni span img {
-    margin-right: 5px;
-    width: 20px;
-  }
-  .property_eni span {
-    font-size: 12px;
-  }
-  .property_eni span:not(:last-child):before {
-    right: -56px;
+    font-size: 16px;
   }
 }
-
-@media screen and (max-width: 767.98px) {
-  .property_content {
-    padding: 11px 12px;
-  }
-  .property_eni span:not(:last-child):before {
-    right: -42px;
-  }
-  .property_image img {
-    height: 250px;
-  }
-  .property_name a {
-    font-size: 20px;
-  }
-  .property_price p {
-    font-size: 32px;
-  }
-  .property_price p span {
-    font-size: 19px;
-  }
-  .wishlist img {
-    width: 27px;
-  }
-  .property_location img {
-    width: 16px;
-    margin-top: 2px;
-  }
-  .property_location p {
-    font-size: 14px;
-  }
-  .property_eni span img {
-    margin-right: 9px;
-    width: 24px;
-  }
-  .property_eni span {
-    font-size: 15px;
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .property_box {
+    margin: 0px 20px;
+    height: auto;
   }
 }
-
-@media screen and (max-width: 375.98px) {
-  .property_eni span:not(:last-child):before {
-    right: -22px;
-  }
+@media (max-width: 575.98px) {
 }
 </style>
