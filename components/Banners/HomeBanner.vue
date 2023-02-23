@@ -114,6 +114,9 @@
   }
 }
 @media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
   .banner {
     height: 351px;
     background: url(/images/home_banner_mobile.png);
@@ -143,6 +146,14 @@
     background: #ffffff8f;
   }
 }
+@media (max-width: 390.98px) {
+  .baneer_content {
+    width: 75%;
+  }
+  .banner:before {
+    width: 82%;
+  }
+}
 @media (max-width: 376.98px) {
   .baneer_content {
     width: 78%;
@@ -161,6 +172,41 @@
   .banner:before {
     top: -377px;
     width: 93%;
+  }
+}
+
+@media only screen and (width: 393px) {
+  .banner:before {
+    width: 81%;
+  }
+}
+@media only screen and (width: 360px) {
+  .baneer_content {
+    width: 81%;
+  }
+  .banner:before {
+    width: 87%;
+  }
+}
+
+@media only screen and (width: 540px) {
+  .banner:before {
+    width: 58%;
+  }
+}
+@media only screen and (width: 280px) {
+  .baneer_content {
+    width: 100%;
+  }
+  .baneer_content h1 {
+    font-size: 19px;
+  }
+  .baneer_content p {
+    font-size: 14px;
+  }
+  .banner:before {
+    top: -391px;
+    height: 53%;
   }
 }
 </style>

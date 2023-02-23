@@ -9,6 +9,9 @@ import "vue-select/dist/vue-select.css";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
+
 const SellerPointsWorks = ref([
   {
     image: "/images/seller_points_work1.png",
@@ -472,7 +475,7 @@ const submitForm = async () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 d-none d-md-block">
                   <div class="row">
                     <div
                       class="col-md-6"
@@ -501,6 +504,73 @@ const submitForm = async () => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-12 d-block d-md-none">
+                  <div>
+                    <vueper-slides
+                      class="no-shadow fixed-height-custom next-side new-down-arrow"
+                      :visibleSlides="1"
+                      :arrows-outside="false"
+                      :arrows="true"
+                      :bullets="false"
+                      :bulletsOutside="false"
+                      :fixed-height="true"
+                      :touchable="false"
+                      :slide-multiple="true"
+                      :initSlide="1"
+                      :alwaysRefreshClones="true"
+                      autoplay
+                      :breakpoints="{
+                        426: {
+                          visibleSlides: 1,
+                          fade: false,
+                        },
+                      }"
+                    >
+                      <template #arrow-left>
+                        <img
+                          src="/images/left_mobile.png"
+                          class="img-fluid small-icon"
+                          alt=""
+                        />
+                      </template>
+
+                      <template #arrow-right>
+                        <img
+                          src="/images/right_mobile.png"
+                          class="img-fluid small-icon"
+                          alt=""
+                        />
+                      </template>
+                      <vueper-slide
+                        v-for="(SellerPointsWork, index) in SellerPointsWorks"
+                        :key="index"
+                      >
+                        <template #content>
+                          <div class="seller_points_work_box">
+                            <div class="seller_points_work_box_image">
+                              <img
+                                :src="SellerPointsWork.image"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div class="seller_points_work_box_content_box">
+                              <div class="seller_points_work_box_title">
+                                <span>{{ SellerPointsWork.title }}</span>
+                              </div>
+                              <div class="seller_points_work_box_content">
+                                <p>
+                                  {{ SellerPointsWork.content }}
+                                </p>
+                                <span>{{ index + 1 }}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </template>
+                      </vueper-slide>
+                    </vueper-slides>
                   </div>
                 </div>
                 <div class="col-md-12 mt-md-0 mt-lg-5 pt-md-0 pt-lg-3">
@@ -1851,6 +1921,13 @@ const submitForm = async () => {
   display: flex;
   align-items: center;
 }
+
+.fixed-height-custom {
+  height: 435px;
+}
+.small-icon {
+  width: 20px;
+}
 @media (max-width: 1441.98px) {
   .step_box {
     padding: 20px;
@@ -1926,19 +2003,101 @@ const submitForm = async () => {
   }
 }
 @media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
   .seller_points_work_box_image img {
     height: 234px;
   }
+  .seller_points {
+    padding: 30px 0;
+  }
+  .seller_points_title h2 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+  .seller_points_title span,
+  .seller_points_title p {
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 1.4;
+  }
+  .seller_points_title span strong {
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .whosell_content h3 {
+    font-size: 21px;
+    position: relative;
+    top: -337px;
+    text-align: center;
+  }
   .whosell_content p {
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: -45px;
+  }
+  .whosell_image {
+    margin-top: 50px;
+  }
+  .whosell_content {
+    margin-bottom: 30px;
   }
 }
+
+@media (max-width: 375.98px) {
+  .seller_points_title span,
+  .seller_points_title p {
+    font-size: 15px;
+  }
+  .seller_points_title h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .whosell_content h3 {
+    font-size: 19px;
+    position: relative;
+    top: -312px;
+    text-align: center;
+  }
+  .seller_points_work_box_content_box {
+    padding: 25px 17px;
+  }
+  .seller_points_work_box_title span {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .seller_points_work_box_content p {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 321.98px) {
   .whosell_content h3 {
     font-size: 21px;
   }
   .whosell_content a {
     font-size: 16px;
+  }
+  .whosell_content h3 {
+    top: -298px;
+  }
+  .seller_points_work_box_content_box {
+    padding: 18px 5px;
+  }
+}
+
+@media only screen and (width: 390px) {
+  .whosell_content h3 {
+    font-size: 20px;
+    top: -319px;
+  }
+  .seller_points_work_box_title span {
+    font-size: 16px;
+  }
+  .seller_points_work_box_content_box {
+    padding: 20px 17px;
+  }
+  .fixed-height-custom {
+    height: 460px;
   }
 }
 </style>

@@ -75,7 +75,7 @@ const configs = useRuntimeConfig();
                   <NuxtLink to="/story">Our story</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/">Careers</NuxtLink>
+                  <NuxtLink to="/careers">Careers</NuxtLink>
                 </li>
               </ul>
             </div>

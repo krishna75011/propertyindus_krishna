@@ -1288,3 +1288,7 @@ label.form-label.cw {
 .contact_custom .vs__actions .vs__open-indicator {
   fill: #000;
 }
+
+.new-down-arrow .vueperslides__arrow {
+  top: 59% !important;
+}

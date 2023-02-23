@@ -82,7 +82,7 @@ const closeburg = () => {
             <NuxtLink to="#!">FAQs</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#!">Careers</NuxtLink>
+            <NuxtLink to="/careers">Careers</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/contact">Contact Us</NuxtLink>

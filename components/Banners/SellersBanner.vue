@@ -137,19 +137,49 @@ function addAddressf() {
   }
 }
 @media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
   .banner {
-    height: 275px;
+    height: 347px;
+    margin-top: 165px;
+    background: url(/images/seller_banner_mobile.png);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner:before {
+    content: none;
+  }
+  .banner:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 301px;
+    top: -165px;
+    background: linear-gradient(
+      180deg,
+      #c5cfd2 54.63%,
+      rgba(203, 225, 242, 0) 96.93%
+    );
   }
   .baneer_content {
     width: 66%;
+    z-index: 999;
+    position: absolute;
+    top: -150px;
+    left: 30px;
   }
   .baneer_content h1 {
     font-size: 22px;
+    color: #000;
   }
   .baneer_content p {
-    font-size: 13px;
-    width: 84%;
+    font-size: 14px;
+    width: 100%;
     margin-top: 11px !important;
+    color: #000;
+    font-weight: 400;
   }
   .address_manul p {
     font-size: 14px !important;
@@ -175,13 +205,28 @@ function addAddressf() {
   .address_manul p span {
     font-size: 15px !important;
   }
+  .baneer_content {
+    left: 23px;
+  }
+  .address_manul p {
+    width: 110% !important;
+  }
 }
 @media (max-width: 321.98px) {
   .baneer_content {
     width: 89%;
   }
   .address_manul p {
-    width: 110% !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (width: 360px) {
+  .baneer_content {
+    width: 87%;
+  }
+  .address_manul p {
+    width: 100% !important;
   }
 }
 </style>

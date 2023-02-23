@@ -274,18 +274,31 @@ ul.address_list p span {
   }
 }
 @media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
   .form_box .input_field input.form-control {
-    width: 242px;
-    padding: 9px 0px 9px 31px;
+    width: 220px;
+    padding: 10px 0px 10px 31px;
   }
   .button_box button.form_submit {
-    font-size: 14px;
-    padding: 7.5px 20px;
+    border: none;
+    font-size: 15px;
+    padding: 14px 20px;
+    line-height: 14px;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .button_box {
+    padding: 0;
   }
 }
+@media (max-width: 375.98px) {
+}
+
 @media (max-width: 321.98px) {
   .form_box .input_field input.form-control {
-    width: 209px;
+    width: 184px;
   }
   .form_box .input_field input.form-control::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
