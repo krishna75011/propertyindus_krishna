@@ -145,7 +145,7 @@ function addAddressf() {
     background: url(/images/seller_banner_mobile.png);
     background-repeat: no-repeat !important;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
   }
 
   .banner:before {
