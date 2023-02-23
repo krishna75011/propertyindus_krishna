@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     apiSecret: "123",
     public: {
       PHONE: "905-567-0200",
-      EMAIL: "info@propertyindis.com",
+      EMAIL: "info@propertyindus.com",
     },
   },
 });

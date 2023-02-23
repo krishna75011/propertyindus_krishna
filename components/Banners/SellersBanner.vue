@@ -142,10 +142,10 @@ function addAddressf() {
   .banner {
     height: 347px;
     margin-top: 165px;
-    background: url(/images/seller_banner_mobile.png);
+    background: url(/images/seller_banner_mobile.webp);
     background-repeat: no-repeat !important;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .banner:before {
